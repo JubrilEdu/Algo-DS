@@ -21,10 +21,6 @@ public class MedianOfArray {
         Arrays.sort(result);
         if (result.length%2 == 0) {
             int midpoint = result.length / 2;
-            System.out.println("midpoint"+ midpoint);
-            System.out.println(Double.valueOf(result[midpoint-1]) );
-            System.out.println(Double.valueOf(result[midpoint]) );
-            System.out.println((Double.valueOf(result[midpoint-1]) + Double.valueOf(result[midpoint])) / 2);
             return (result[midpoint] + result[midpoint / 2]) / 2;
         } else {
             Double midpoint = Double.valueOf(result.length/2);
