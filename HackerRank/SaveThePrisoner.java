@@ -9,11 +9,7 @@ public class SaveThePrisoner {
     }
 
     static int saveThePrisoner(int numberOfPrisoners, int numberOfSweets, int startingPoint) {
-       int value = (startingPoint+numberOfSweets-1)%numberOfPrisoners;
-        if (value == 0) {
-            return  numberOfPrisoners;
-        } else {
-            return value;
-        }
+        int value = (startingPoint+numberOfSweets-1)%numberOfPrisoners;
+        return value == 0 ? numberOfPrisoners: value;
     }
 }
